@@ -1,5 +1,7 @@
 package ua.artcode.week1.day2_homework1.test;
 
+import ua.artcode.week1.day2_homework1.model.Subject;
+
 /**
  * TDD (for class Subject)
  * Created by Alexey_O on 06.09.2017.
@@ -10,8 +12,26 @@ public class TestSubject {
     public static void main(String[] args) {
         boolean testMark = true;
 
+        testMark &= testSetNameWithDiffParams();
+
+        testMark &= testGetNameFromCreatedSubject();
+        testMark &= testGetNameAfterSet();
+
+        testMark &= testSetDifferentSemesterHours();
+
+        testMark &= testGetSemesterHoursFromCreatedSubject();
+        testMark &= testGetSemesterHoursAfterSet();
+
+        testMark &= testSetDifferentWorkHours();
+
+        testMark &= testGetWorkHoursFromCreatedSubject();
+        testMark &= testGetWorkHoursAfterSet();
+
         testMark &= testExamSeveralTimes();
-        testMark &= testGetMarkWithDiffParams();
+
+        testMark &= testGetMarkFromCreatedSubject();
+        testMark &= testGetMarkWithoutExam();
+        testMark &= testGetMarkWithExam();
 
         System.out.println("TDD status: " + testMark);
     }
@@ -23,7 +43,7 @@ public class TestSubject {
 
         Subject subject = new Subject();
         for (int i = 0; i < testValue.length; i++) {
-            testResult &= expected[i] & subject.setName(testValue[i]);
+            testResult &= (expected[i] == subject.setName(testValue[i]));
         }
 
         TestUtils.printTestsResult("testSetNameWithDiffParams",
@@ -87,7 +107,7 @@ public class TestSubject {
 
 
     public static boolean testGetSemesterHoursFromCreatedSubject() {
-        int expected = 0;
+        int expected = 1;
         boolean testResult;
 
         Subject subject = new Subject();
@@ -120,11 +140,12 @@ public class TestSubject {
 
     public static boolean testSetDifferentWorkHours() {
         int[] testVaue = {-20, 0, 80};
-        boolean[] expected = {false, false, true};
+        boolean[] expected = {false, true, true};
         boolean testResult = true;
 
         Subject subject = new Subject();
         for (int i = 0; i < testVaue.length; i++) {
+            subject.setSemesterHours(testVaue[i]);
             testResult &= (expected[i] == subject.setWorkHours(testVaue[i]));
         }
 
@@ -157,6 +178,7 @@ public class TestSubject {
         boolean testResult;
 
         Subject subject = new Subject();
+        subject.setSemesterHours(testValue);
         subject.setWorkHours(testValue);
         testResult = (expected == subject.getWorkHours());
 
@@ -208,7 +230,7 @@ public class TestSubject {
     public static boolean testGetMarkWithoutExam() {
         int[] testValueSemesterHours =  {80, 120, 20, 50, 10, -5, 0};
         int[] testValueWorkHours =      {40, 30, 160, 0, -20, 120, 25};
-        int[] expected =                {30, 15, 15, 15, 15, 15, 15};
+        int[] expected =                {30, 15, 15, 0, 0, 0, 0};
         boolean testResult = true;
 
         Subject subject = new Subject();
@@ -218,7 +240,7 @@ public class TestSubject {
             testResult &= (expected[i] == subject.getMark());
         }
 
-        TestUtils.printTestsResult("testGetMarkFromCreatedSubject",
+        TestUtils.printTestsResult("testGetMarkWithoutExam",
                 "Subject",
                 "getMark()",
                 testResult);
@@ -228,7 +250,7 @@ public class TestSubject {
     public static boolean testGetMarkWithExam() {
         int[] testValueSemesterHours =  {80, 120, 20, 50, 10, -5, 0};
         int[] testValueWorkHours =      {40, 30, 160, 0, -20, 120, 25};
-        int[] expected =                {30, 15, 15, 15, 15, 15, 15};
+        int[] expected =                {30, 15, 15, 0, 0, 0, 0};
         boolean testResult = true;
 
         Subject subject = new Subject();
@@ -240,36 +262,10 @@ public class TestSubject {
             testResult &= ((expected[i] + tempExamMark) == subject.getMark());
         }
 
-        TestUtils.printTestsResult("testGetMarkFromCreatedSubject",
+        TestUtils.printTestsResult("testGetMarkWithExam",
                 "Subject",
                 "getMark()",
                 testResult);
         return testResult;
-    }
-
-
-
-    public static boolean testGetMarkWithDiffParams() {
-        Subject subject = new Subject();
-        int[] testSemesterHoursArr = {150, 300, 60, 270, 200};
-        int[] testWorkHoursArr = {75, 75, 12, 27, 200};
-        int[] expectedValuesArr = {30, 15, 12, 6, 60};
-
-        for (int i = 0; i < expectedValuesArr.length; i++) {
-            subject.setSemesterHoursNum(testSemesterHoursArr[i]);
-            subject.setWorkHoursNum(testWorkHoursArr[i]);
-            if (subject.getAttendanceMark() != expectedValuesArr[i]) {
-                TestUtils.printTestsResult("testGetMarkWithDiffParams",
-                        "Subject",
-                        "getMark()",
-                        false);
-                return false;
-            }
-        }
-        TestUtils.printTestsResult("testGetMarkWithDiffParams",
-                "Subject",
-                "getMark()",
-                true);
-        return true;
     }
 }
