@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ua.artcode.week2.day1.model.Coder</OriginalElement>
+  <nodes>
+    <node x="0.0" y="269.5">ua.artcode.week2.day1.model.Manager</node>
+    <node x="415.0" y="258.0">ua.artcode.week2.day1.model.Coder</node>
+    <node x="221.0" y="258.0">ua.artcode.week2.day1.model.Tester</node>
+    <node x="273.66666666666663" y="428.0">ua.artcode.week2.day1.model.Director</node>
+    <node x="275.0" y="0.0">ua.artcode.week2.day1.model.Worker</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ua.artcode.week2.day1.model.Director" target="ua.artcode.week2.day1.model.Manager">
+      <point x="-42.75" y="-48.5" />
+      <point x="316.41666666666663" y="403.0" />
+      <point x="100.5" y="403.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="ua.artcode.week2.day1.model.Manager" target="ua.artcode.week2.day1.model.Worker">
+      <point x="0.0" y="-48.5" />
+      <point x="100.5" y="228.0" />
+      <point x="307.5" y="228.0" />
+      <point x="-97.5" y="104.0" />
+    </edge>
+    <edge source="ua.artcode.week2.day1.model.Tester" target="ua.artcode.week2.day1.model.Worker">
+      <point x="0.0" y="-60.0" />
+      <point x="308.0" y="238.0" />
+      <point x="372.5" y="238.0" />
+      <point x="-32.5" y="104.0" />
+    </edge>
+    <edge source="ua.artcode.week2.day1.model.Coder" target="ua.artcode.week2.day1.model.Worker">
+      <point x="0.0" y="-60.0" />
+      <point x="502.0" y="238.0" />
+      <point x="437.5" y="238.0" />
+      <point x="32.5" y="104.0" />
+    </edge>
+    <edge source="ua.artcode.week2.day1.model.Director" target="ua.artcode.week2.day1.model.Worker">
+      <point x="42.75" y="-48.5" />
+      <point x="401.91666666666663" y="403.0" />
+      <point x="599.5" y="403.0" />
+      <point x="599.5" y="228.0" />
+      <point x="502.5" y="228.0" />
+      <point x="97.5" y="104.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="159.5" y="153.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
