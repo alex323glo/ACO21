@@ -6,7 +6,7 @@ package ua.artcode.week2.day1.model;
 public class Coder extends Worker {     // is-a
 
     // Fields and properties:
-    private String programmingLanguage;
+    private String programmingLanguage = "Java";
 
     // Constructors:
     public Coder() {
@@ -31,5 +31,10 @@ public class Coder extends Worker {     // is-a
     // Other methods:
     public void code() {
         System.out.println("Coder codes.");
+    }
+
+    @Override
+    public String toString() {
+        return String.format("id: %d; name: %s.", getId(), getName());
     }
 }
