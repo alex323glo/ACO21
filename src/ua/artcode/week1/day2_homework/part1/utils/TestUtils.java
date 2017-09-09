@@ -1,4 +1,4 @@
-package ua.artcode.week1.day2_homework1.test;
+package ua.artcode.week1.day2_homework.part1.utils;
 
 /**
  * Created by Alexey_O on 06.09.2017.

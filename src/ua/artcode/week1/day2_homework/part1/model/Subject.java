@@ -1,4 +1,4 @@
-package ua.artcode.week1.day2_homework1.model;
+package ua.artcode.week1.day2_homework.part1.model;
 
 /**
  * Created by Alexey_O on 07.09.2017.
@@ -90,5 +90,16 @@ public class Subject {
 
     private int makeAttendanceMark() {
         return (int) (((double) ATTENDANCE_MARK_PART) * (((double) workHours) / ((double) semesterHours)));
+    }
+
+    @Override
+    public String toString() {
+        return "Subject{" +
+                "name='" + name + '\'' +
+                ", semesterHours=" + semesterHours +
+                ", workHours=" + workHours +
+                ", examMark=" + examMark +
+                ", attendanceMark=" + attendanceMark +
+                '}';
     }
 }

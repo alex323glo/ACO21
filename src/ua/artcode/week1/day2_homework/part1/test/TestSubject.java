@@ -1,9 +1,10 @@
-package ua.artcode.week1.day2_homework1.test;
+package ua.artcode.week1.day2_homework.part1.test;
 
-import ua.artcode.week1.day2_homework1.model.Subject;
+import ua.artcode.week1.day2_homework.part1.model.Subject;
+import ua.artcode.week1.day2_homework.part1.utils.TestUtils;
 
 /**
- * TDD (for class Subject)
+ * TDD (for Subject class).
  * Created by Alexey_O on 06.09.2017.
  */
 
