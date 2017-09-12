@@ -1,0 +1,33 @@
+
+  Design Pattern  ------->  OOD (Object Oriented Design)
+            ||               /\
+            ||              /  \
+            ||               ||
+            ||               ||
+           \  /              ||
+            \/
+              ----------->  SOLID
+
+    DRY - Don't Repeat Yourself. ("Не повторюй себе.")
+    YAGNI - You Aren't Going To Need It. ("Вам це не знадобится.")
+    KISS - Keep It Simple, Stupid. ("Не ускладнюй, дурню.")
+
+
+SOLID:
+    1) (S) Single Responsibility (Every module must response only for his own and his logic.)
+    2) (O) Open - Closed (Open for scaling, Closed for changing.)
+    3) (L) Barbara Liskov (Make so that Parent elements could be replaced with Child elements.) - Abstraction
+    4) (I) Interface Segregation (Segregation - separation by some sign, attribute, or feature.)
+    5) (D) Dependency Inversion (Depend on abstraction instead of writing code, which Depends on abstraction.
+       More abstraction - better.)
+
+
+Design Patterns:
+    1) Strategy ("Стратегія") (Allows to dynamically change strategy of functionality.)
+    2) Factory method ("Фабричний метод") (Encapsulates process of creating an object.)
+    3) Adapter ("Адаптер") (Helps to adapt final(?) class for some interface or logic (like wrapper).)
+    4) Proxy ("Проксі") (Hides additional functionality (validation, preparation) around the unchanged module
+    (like wrapper).)
+    5) Observer ("Наглядач") (Observes (listens) changes and calls some of his needed methods when needed.)
+    6) Decorator ("Декоратор") (Dynamically connects additional abilities to object (like "decorates"
+    object with additional abilities, services, functions).)

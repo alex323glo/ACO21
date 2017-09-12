@@ -1,0 +1,39 @@
+package ua.artcode.week3.day2.design_patterns.social_network;
+
+/**
+ * Created by Alexey_O on 11.09.2017.
+ */
+public class Course {
+
+    private int id;
+    private String name;
+
+    public Course() {
+    }
+
+    public Course(String name) {
+
+        this.name = name;
+    }
+
+    public Course(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
