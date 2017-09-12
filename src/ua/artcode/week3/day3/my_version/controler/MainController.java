@@ -31,22 +31,45 @@ public class MainController implements IMainController {
     // Implemented methods:
     @Override
     public boolean addCard(int groupId, Card card) {        // TODO: addCard(int groupId, Card card);
-        //if (appDB == null || appDB.)
+        ArrayList<Group> groupList = appDB.getGroupList();
+
+        for (Group current: groupList) {
+            if (current.getId() == groupId) {
+                return current.addCard(card);
+            }
+        }
+
         return false;
     }
 
     @Override
     public Card removeCard(int groupId, int cardId) {       // TODO: removeCard(int groupId, int cardId);
+        ArrayList<Group> groupList = appDB.getGroupList();
+
+        for (Group current: groupList) {
+            if (current.getId() == groupId) {
+                return current.removeCard(cardId);
+            }
+        }
+
         return null;
     }
 
     @Override
     public boolean createGroup(Group group) {               // TODO: createGroup(Group group);
-        return false;
+        return appDB.addGroup(group);
     }
 
     @Override
     public ArrayList<Card> getCardsOfGroup(int groupId) {   // TODO: getCardsOfGroup(int groupId);
+        ArrayList<Group> groupList = appDB.getGroupList();
+
+        for (Group current: groupList) {
+            if (current.getId() == groupId) {
+                return current.getCardList();
+            }
+        }
+
         return null;
     }
 

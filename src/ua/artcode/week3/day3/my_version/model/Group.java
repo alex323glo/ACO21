@@ -1,5 +1,7 @@
 package ua.artcode.week3.day3.my_version.model;
 
+import ua.artcode.week3.day3.my_version.utils.GroupUtils;
+
 import java.util.ArrayList;
 
 /**
@@ -13,6 +15,7 @@ public class Group {
 
     // Constructors:
     public Group() {
+        cardList = new ArrayList<>();
     }
 
     public Group(int id, ArrayList<Card> cardList) {
@@ -39,17 +42,21 @@ public class Group {
 
     // Other methods:
     public boolean addCard(Card card) { // TODO: addCard(Card card);
+        if (GroupUtils.cardValidator(card)) {
+            return cardList.add(card);
+        }
+
         return false;
     }
 
     public Card removeCard(int id) {    // TODO: removeCard(int id);
+        for (int i = 0; i < cardList.size(); i++) {
+            if (cardList.get(i).getId() == id) {
+                return cardList.remove(i);
+            }
+        }
+
         return null;
     }
 
-    public ArrayList<Card> getCardsArray() {
-        if (cardList == null) {
-            return null;
-        }
-        return cardList;
-    }
 }
