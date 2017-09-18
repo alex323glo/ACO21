@@ -2,7 +2,7 @@ package ua.artcode.week4.day3.task2;
 
 public class NodeUtils {
 
-    public static int countTreeElements(MyNode head) {
+    public static int countTreeElements(Node head) {
 
         if (head.getChildren().isEmpty()) {
             return 1;
@@ -10,7 +10,7 @@ public class NodeUtils {
 
         int sum = 1;
 
-        for (MyNode childNode: head.getChildren()) {
+        for (Node childNode: head.getChildren()) {
             sum += countTreeElements(childNode);
         }
 
@@ -18,11 +18,11 @@ public class NodeUtils {
 
     }
 
-    public static void printTree(MyNode head) {
+    public static void printTree(Node head) {
         printTreeDeep(head, 0);
     }
 
-    private static void printTreeDeep(MyNode head, int depth) {
+    private static void printTreeDeep(Node head, int depth) {
 
 
         for (int i = 0; i < depth; i++) {
@@ -34,7 +34,7 @@ public class NodeUtils {
             return;
         }
 
-        for (MyNode childNode: head.getChildren()) {
+        for (Node childNode: head.getChildren()) {
             printTreeDeep(childNode, depth + 1);
         }
 

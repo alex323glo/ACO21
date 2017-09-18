@@ -4,27 +4,27 @@ public class TestTree {
 
     public static void main(String[] args) {
 
-        MyNode node1 = new MyNode(1);
+        Node node1 = new Node(1);
 
 
 
-        MyNode node11 = new MyNode(11);
-        MyNode node12 = new MyNode(12);
-        MyNode node13 = new MyNode(13);
+        Node node11 = new Node(11);
+        Node node12 = new Node(12);
+        Node node13 = new Node(13);
 
 
-        MyNode node111 = new MyNode(111);
-        MyNode node112 = new MyNode(112);
+        Node node111 = new Node(111);
+        Node node112 = new Node(112);
 
-        MyNode node121 = new MyNode(121);
-        MyNode node122 = new MyNode(122);
-        MyNode node123 = new MyNode(123);
-        MyNode node124 = new MyNode(124);
+        Node node121 = new Node(121);
+        Node node122 = new Node(122);
+        Node node123 = new Node(123);
+        Node node124 = new Node(124);
 
-        MyNode node131 = new MyNode(131);
+        Node node131 = new Node(131);
 
 
-        MyNode head = node1;
+        Node head = node1;
 
         node11.joinWide(node111).joinWide(node112);
         node12.joinWide(node121).joinWide(node122).joinWide(node123).joinWide(node124);

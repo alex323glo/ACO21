@@ -3,24 +3,24 @@ package ua.artcode.week4.day3.task2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyNode {
+public class Node {
 
     // Fields:
     private Object value;
 
-    private List<MyNode> children;
+    private List<Node> children;
 
     // Constructors:
-    public MyNode() {
+    public Node() {
         children = new ArrayList<>();
     }
 
-    public MyNode(Object value) {
+    public Node(Object value) {
         this.value = value;
         children = new ArrayList<>();
     }
 
-    public MyNode(Object value, List<MyNode> children) {
+    public Node(Object value, List<Node> children) {
         this.value = value;
         this.children = children;
     }
@@ -34,22 +34,22 @@ public class MyNode {
         this.value = value;
     }
 
-    public List<MyNode> getChildren() {
+    public List<Node> getChildren() {
         return children;
     }
 
-    public void setChildren(List<MyNode> children) {
+    public void setChildren(List<Node> children) {
         this.children = children;
     }
 
 
     // Add child node:
-    public MyNode joinDeep(MyNode newNode) {
+    public Node joinDeep(Node newNode) {
         children.add(newNode);
         return newNode;
     }
 
-    public MyNode joinWide(MyNode newNode) {
+    public Node joinWide(Node newNode) {
         children.add(newNode);
         return this;
     }
