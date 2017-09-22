@@ -1,4 +1,4 @@
-package ua.artcode.week5.exceptions;
+package ua.artcode.week5.day1.exceptions;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

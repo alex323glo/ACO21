@@ -2,36 +2,36 @@ package ua.artcode.week4.day2.data_structure.static_struct;
 
 import ua.artcode.week4.day2.data_structure.common.MyStack;
 
-import java.util.Arrays;
+import java.util.Iterator;
 
-public class MyArrayStack implements MyStack {
+public class MyArrayStack<E> implements MyStack<E>, Iterable {
 
-    private Object[] arr;
+    private E[] arr;
     private int top;
 
     public MyArrayStack(int size) {
-        arr = new Object[size];
+        arr = (E[]) new Object[size];
     }
 
     @Override
-    public void push(Object object) {
+    public void push(E e) {
 
         if (top == arr.length) {
             System.out.println("Stack is full!");
             return;
         }
 
-        arr[top++] = object;
+        arr[top++] = e;
     }
 
     @Override
-    public Object pop() {
+    public E pop() {
         if (top == 0) {
             System.out.println("Stack is empty!");
             return null;
         }
 
-        Object temp = arr[--top];
+        E temp = arr[--top];
         arr[top] = null;
         return temp;
     }
@@ -48,4 +48,38 @@ public class MyArrayStack implements MyStack {
                 sb +
                 '}';
     }
+
+
+    // (from week5_day1 !!!)
+    @Override
+    public Iterator<E> iterator() {
+        return new MyArrayStackIterator<E>(arr, top);
+    }
+
+
+    // (from week5_day1 !!!)
+    // nested class:    (better to use inner!)
+    public static class MyArrayStackIterator<G> implements Iterator<G> {
+
+        private G[] arr;
+        private int curr;
+
+        public MyArrayStackIterator(G[] arr, int top) {
+            this.arr = arr;
+            curr = top - 1;
+        }
+
+        @Override
+        public G next() {
+            return arr[curr--];
+        }
+
+        @Override
+        public boolean hasNext() {
+            return curr >= 0;
+        }
+
+    }
+
+
 }

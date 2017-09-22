@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.lang.Exception</OriginalElement>
+  <nodes>
+    <node x="2.5" y="293.0">java.util.InputMismatchException</node>
+    <node x="1470.8260869565215" y="293.0">java.util.IllegalFormatPrecisionException</node>
+    <node x="1496.3260869565215" y="182.0">java.util.IllegalFormatException</node>
+    <node x="1719.8260869565215" y="293.0">java.util.DuplicateFormatFlagsException</node>
+    <node x="968.8260869565216" y="293.0">java.util.MissingFormatWidthException</node>
+    <node x="1694.3260869565215" y="182.0">java.util.MissingResourceException</node>
+    <node x="1527.8260869565215" y="0.0">java.io.Serializable</node>
+    <node x="1531.3260869565215" y="81.0">java.lang</node>
+    <node x="504.82608695652164" y="182.0">java.util.ConcurrentModificationException</node>
+    <node x="1965.8260869565215" y="293.0">java.util.FormatFlagsConversionMismatchException</node>
+    <node x="1207.8260869565215" y="293.0">java.util.MissingFormatArgumentException</node>
+    <node x="760.8260869565216" y="182.0">java.util.InvalidPropertiesFormatException</node>
+    <node x="1019.8260869565216" y="182.0">java.util.ServiceConfigurationError</node>
+    <node x="2276.8260869565215" y="293.0">java.util.IllegalFormatWidthException</node>
+    <node x="0.0" y="182.0">java.util.NoSuchElementException</node>
+    <node x="2342.3260869565215" y="182.0">java.util.EmptyStackException</node>
+    <node x="723.8260869565216" y="293.0">java.util.UnknownFormatFlagsException</node>
+    <node x="496.82608695652164" y="293.0">java.util.IllegalFormatFlagsException</node>
+    <node x="2506.8260869565215" y="293.0">java.util.UnknownFormatConversionException</node>
+    <node x="2785.8260869565215" y="293.0">java.util.IllegalFormatConversionException</node>
+    <node x="2124.3260869565215" y="182.0">java.util.FormatterClosedException</node>
+    <node x="1913.3260869565215" y="182.0">java.util.IllformedLocaleException</node>
+    <node x="241.82608695652152" y="293.0">java.util.IllegalFormatCodePointException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.InvalidPropertiesFormatException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="880.3260869565216" y="152.0" />
+      <point x="1561.3260869565215" y="152.0" />
+      <point x="-24.0" y="15.5" />
+    </edge>
+    <edge source="java.util.UnknownFormatConversionException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="2636.3260869565215" y="243.0" />
+      <point x="1650.0533596837945" y="243.0" />
+      <point x="64.72727272727275" y="15.5" />
+    </edge>
+    <edge source="java.util.IllformedLocaleException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="2008.8260869565215" y="152.0" />
+      <point x="1609.3260869565215" y="152.0" />
+      <point x="24.0" y="15.5" />
+    </edge>
+    <edge source="java.util.ConcurrentModificationException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="622.8260869565216" y="142.0" />
+      <point x="1549.3260869565215" y="142.0" />
+      <point x="-36.0" y="15.5" />
+    </edge>
+    <edge source="java.lang" target="java.io.Serializable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.IllegalFormatWidthException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="2381.8260869565215" y="253.0" />
+      <point x="1633.8715415019763" y="253.0" />
+      <point x="48.54545454545456" y="15.5" />
+    </edge>
+    <edge source="java.util.InputMismatchException" target="java.util.NoSuchElementException">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.MissingFormatWidthException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="1078.3260869565215" y="263.0" />
+      <point x="1552.9624505928853" y="263.0" />
+      <point x="-32.36363636363636" y="15.5" />
+    </edge>
+    <edge source="java.util.FormatterClosedException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="2223.3260869565215" y="142.0" />
+      <point x="1621.3260869565215" y="142.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="java.util.EmptyStackException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="2426.8260869565215" y="132.0" />
+      <point x="1633.3260869565215" y="132.0" />
+      <point x="48.0" y="15.5" />
+    </edge>
+    <edge source="java.util.MissingFormatArgumentException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="1329.3260869565215" y="273.0" />
+      <point x="1569.1442687747035" y="273.0" />
+      <point x="-16.181818181818173" y="15.5" />
+    </edge>
+    <edge source="java.util.IllegalFormatPrecisionException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="1.4210854715202004E-14" y="15.5" />
+    </edge>
+    <edge source="java.util.IllegalFormatException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.NoSuchElementException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="96.5" y="132.0" />
+      <point x="1537.3260869565215" y="132.0" />
+      <point x="-48.0" y="15.5" />
+    </edge>
+    <edge source="java.util.IllegalFormatFlagsException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="600.3260869565216" y="243.0" />
+      <point x="1520.598814229249" y="243.0" />
+      <point x="-64.72727272727273" y="15.5" />
+    </edge>
+    <edge source="java.util.IllegalFormatCodePointException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="359.3260869565215" y="233.0" />
+      <point x="1504.4169960474308" y="233.0" />
+      <point x="-80.90909090909092" y="15.5" />
+    </edge>
+    <edge source="java.util.MissingResourceException" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="1793.8260869565215" y="162.0" />
+      <point x="1597.3260869565215" y="162.0" />
+      <point x="12.0" y="15.5" />
+    </edge>
+    <edge source="java.util.DuplicateFormatFlagsException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="1832.8260869565215" y="273.0" />
+      <point x="1601.5079051383398" y="273.0" />
+      <point x="16.1818181818182" y="15.5" />
+    </edge>
+    <edge source="java.util.FormatFlagsConversionMismatchException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="2111.3260869565215" y="263.0" />
+      <point x="1617.689723320158" y="263.0" />
+      <point x="32.36363636363639" y="15.5" />
+    </edge>
+    <edge source="java.util.UnknownFormatFlagsException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="836.3260869565216" y="253.0" />
+      <point x="1536.780632411067" y="253.0" />
+      <point x="-48.54545454545455" y="15.5" />
+    </edge>
+    <edge source="java.util.IllegalFormatConversionException" target="java.util.IllegalFormatException">
+      <point x="0.0" y="-15.5" />
+      <point x="2906.3260869565215" y="233.0" />
+      <point x="1666.2351778656125" y="233.0" />
+      <point x="80.90909090909093" y="15.5" />
+    </edge>
+    <edge source="java.util.ServiceConfigurationError" target="java.lang">
+      <point x="0.0" y="-15.5" />
+      <point x="1117.8260869565215" y="162.0" />
+      <point x="1573.3260869565215" y="162.0" />
+      <point x="-12.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="1843.2499999999995" y="96.49999999999997" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

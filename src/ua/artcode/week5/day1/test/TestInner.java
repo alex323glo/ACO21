@@ -1,8 +1,7 @@
-package ua.artcode.week5.test;
+package ua.artcode.week5.day1.test;
 
-import ua.artcode.week4.day2.data_structure.common.MyStack;
 import ua.artcode.week4.day2.data_structure.dynamic.MyLinkedStack;
-import ua.artcode.week5.iter.MyIterator;
+import ua.artcode.week5.day1.iter.MyIterator;
 
 public class TestInner {
 

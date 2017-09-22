@@ -10,7 +10,7 @@ import ua.artcode.week3.day2.design_patterns.social_network.vk.VkApi;
  */
 public class TestStrategy {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         EducationSystemController systemController = new EducationSystemController();
 
         systemController.setSocialNetworkApi(new FacebookApi());

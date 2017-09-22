@@ -1,8 +1,6 @@
-package ua.artcode.week5.test;
+package ua.artcode.week5.day1.test;
 
-import ua.artcode.week4.day2.data_structure.common.MyStack;
 import ua.artcode.week4.day2.data_structure.static_struct.MyArrayStack;
-import ua.artcode.week5.iter.MyIterator;
 
 import java.util.Iterator;
 

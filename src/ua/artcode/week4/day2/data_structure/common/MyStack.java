@@ -1,11 +1,16 @@
 package ua.artcode.week4.day2.data_structure.common;
 
-public interface MyStack {
+import java.util.Iterator;
+
+public interface MyStack<T> extends Iterable<T> {
 
     // add to tail
-    void push(Object object);
+    void push(T t);
 
     // remove from tail
-    Object pop();
+    T pop();
+
+    // (from week5_day1)
+    Iterator<T> iterator();
 
 }

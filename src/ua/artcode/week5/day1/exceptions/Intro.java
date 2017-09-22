@@ -1,4 +1,4 @@
-package ua.artcode.week5.exceptions;
+package ua.artcode.week5.day1.exceptions;
 
 import ua.artcode.week3.day2.design_patterns.social_network.EducationSystemController;
 import ua.artcode.week3.day2.design_patterns.social_network.exception.InvalidLoginException;
