@@ -22,6 +22,7 @@ public class InnerNestedClasses {
 
         Comparator comparator1 = new MyIntegerComparator();
 
+        // (JS analog - callback() )
         Arrays.sort(arr1, comparator1);
 
 
@@ -34,6 +35,7 @@ public class InnerNestedClasses {
             }
         };
 
+        // (JS analog - callback() )
         Arrays.sort(arr2, comparator2);
 
     }

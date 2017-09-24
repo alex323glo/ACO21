@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class TestJava7 {
+public class TestDateJava7 {
 
     public static void main(String[] args) {
         // JodaTime -> Java 8
