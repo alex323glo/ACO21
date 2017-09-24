@@ -4,7 +4,7 @@ import ua.artcode.week4.day2.data_structure.common.MyStack;
 
 import java.util.Iterator;
 
-public class MyArrayStack<E> implements MyStack<E>, Iterable {
+public class MyArrayStack<E> implements MyStack<E>, Iterable<E> {
 
     private E[] arr;
     private int top;
