@@ -1,6 +1,5 @@
 package ua.artcode.week2.day1.test;
 
-import com.sun.org.apache.bcel.internal.classfile.Code;
 import ua.artcode.week2.day1.model.Coder;
 import ua.artcode.week2.day1.model.Tester;
 import ua.artcode.week2.day1.model.Worker;

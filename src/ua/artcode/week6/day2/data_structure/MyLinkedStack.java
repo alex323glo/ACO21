@@ -1,7 +1,5 @@
 package ua.artcode.week6.day2.data_structure;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.EmptyStackException;
 import java.util.Iterator;
 
@@ -62,7 +60,6 @@ public class MyLinkedStack<E> implements MyStack<E> {
         return true;
     }
 
-    @NotNull
     @Override
     public Iterator<E> iterator() {
         return new MyLinkedStackIterator<E>(top);

@@ -1,7 +1,5 @@
 package ua.artcode.week2.day2.comp;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -108,7 +106,7 @@ class Cat implements Comparable {
     }
 
     @Override
-    public int compareTo(@NotNull Object o) {
+    public int compareTo(Object o) {
         Cat anotherCat = (Cat) o;
         return this.age - anotherCat.age;
     }
