@@ -1,5 +1,7 @@
 package ua.artcode.additional.acp11.week3.day1;
 
+import java.io.InputStream;
+
 public class MyArray<E> implements IMyArray<E> {
 
     public static final int DEFFAULT_ARRAY_LENGTH = 100;
@@ -64,6 +66,7 @@ public class MyArray<E> implements IMyArray<E> {
         if (size < 1) {
             return null;
         }
+
         return array[--size];
     }
 }

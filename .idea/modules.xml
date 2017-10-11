@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ACO21.iml" filepath="$PROJECT_DIR$/ACO21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FreeTaxi/FreeTaxi.iml" filepath="$PROJECT_DIR$/FreeTaxi/FreeTaxi.iml" />
     </modules>
   </component>
 </project>
